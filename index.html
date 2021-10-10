@@ -2,400 +2,733 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Portfolio</title>
-  <!--
-Reflux Template
-https://templatemo.com/tm-531-reflux
--->
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Additional CSS Files -->
-  <link rel="stylesheet" href="assets/css/fontawesome.css" />
-  <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-  <link rel="stylesheet" href="assets/css/owl.css" />
-  <link rel="stylesheet" href="assets/css/lightbox.css" />
+  <meta name="copyright" content="MACode ID, https://www.macodeid.com/">
+
+  <title>Virtual Folio - Portfolio HTML5 Template</title>
+
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/themify-icons.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/animate/animate.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/owl-carousel/owl.carousel.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/perfect-scrollbar/css/perfect-scrollbar.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/nice-select/css/nice-select.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/vendor/fancybox/css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/virtual.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/topbar.virtual.css">
 </head>
 
-<body>
-  <div id="page-wraper">
-    <!-- Sidebar Menu -->
-    <div class="responsive-nav">
-      <i class="fa fa-bars" id="menu-toggle"></i>
-      <div id="menu" class="menu">
-        <i class="fa fa-times" id="menu-close"></i>
-        <div class="container">
-          <div class="image">
-            <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
+<body class="theme-red">
+
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+
+  <!-- Setting button -->
+  <div class="config">
+    <div class="template-config">
+      <!-- Settings -->
+      <div class="d-block">
+        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+      </div>
+      <!-- Puschase -->
+      <div class="d-block">
+        <a href="https://macodeid.com/projects/virtual-folio/" class="btn btn-fab btn-sm" title="Get this template"
+          data-toggle="tooltip" data-placement="left"><span class="ti-download"></span></a>
+      </div>
+      <!-- Help -->
+      <div class="d-block">
+        <a href="#" class="btn btn-fab btn-sm" title="Help" data-toggle="tooltip" data-placement="left"><span
+            class="ti-help"></span></a>
+      </div>
+    </div>
+    <div class="set-menu">
+      <p>Select Color</p>
+      <div class="color-bar" data-toggle="selected">
+        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+        <span class="color-item bg-theme-green" data-class="theme-green"></span>
+        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+      </div>
+      <select class="custom-select d-block my-2" id="change-page">
+        <option value="">Choose Page</option>
+        <option value="index">Topbar</option>
+        <option value="blog-topbar">Blog (Topbar)</option>
+        <option value="index-2">Minibar</option>
+        <option value="blog-minibar">Blog (Minibar)</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="vg-page page-home" id="home" style="background-image: url(assets/img/bg_image_1.jpg)">
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+      <div class="container">
+        <a href="" class="navbar-brand">Programer</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link" data-animate="scrolling">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link" data-animate="scrolling">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+              <button class="btn btn-fab btn-theme no-shadow">En</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- End Navbar -->
+    <!-- Caption header -->
+    <div class="caption-header text-center wow zoomInDown">
+      <h5 class="fw-normal">Welcome</h5>
+      <h1 class="fw-light mb-4">I'm <b class="fg-theme">Rabeya</b></h1>
+      <div class="badge">Programer & Web Designer</div>
+    </div> <!-- End Caption header -->
+    <div class="floating-button"><span class="ti-mouse"></span></div>
+  </div>
+
+  <div class="vg-page page-about" id="about">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/person.jpg" alt="">
           </div>
-          <div class="author-content">
-            <h4>Rabeya</h4>
-            <span>Programer</span>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h1 class="fw-light">Rabeya</h1>
+          <h5 class="fg-theme mb-3">Programer & Web Designer</h5>
+          <p class="text-muted">There are many variations of passages of Lorem Ipsum available, but the majority have
+            suffered alteration in some form but the majority have suffered alteration in some</p>
+          <ul class="theme-list">
+            <li><b>From:</b> Dhaka</li>
+            <li><b>Lives In:</b> Mirpur</li>
+            <li><b>Age:</b> 25</li>
+            <li><b>Gender:</b> Female</li>
+          </ul>
+          <button class="btn btn-theme-outline">Download CV</button>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Coding skills</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 86%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">86%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Java</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">80%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">HTML + CSS</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">100%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">XML</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">90%</div>
+              </div>
+            </div>
           </div>
-          <nav class="main-nav" role="navigation">
-            <ul class="main-menu">
-              <li><a href="#section1">About Me</a></li>
-              <li><a href="#section2">What I’m good at</a></li>
-              <li><a href="#section3">My Work</a></li>
-              <li><a href="#section4">Contact Me</a></li>
-            </ul>
-          </nav>
-          <div class="social-network">
-            <ul class="soial-icons">
-              <li>
-                <a href="https://fb.com/templatemo"><i class="fa fa-facebook"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-dribbble"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-rss"></i></a>
-              </li>
-            </ul>
-          </div>
-          <div class="copyright-text">
-            <p> 2021 Design</p>
+        </div>
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Design Skills</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">UML Design</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">92%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Web Design</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">99%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Logo Design</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 79%;" aria-valuenow="75" aria-valuemin="0"
+                  aria-valuemax="100">79%</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-6 wow fadeInRight">
+          <h2 class="fw-normal">Education</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2018</div>
+              <div class="details">
+                <h5>Bachelor Drgree(Honours)</h5>
+                <small class="fg-theme">National University, Bangladesh</small>
+                <p>First Class</p>
+                <p>CGPA :3.15</p>
+                <P>Department of Marketing</P>
+              </div>
+            </li>
+            <li>
+              <div class="title">2014</div>
+              <div class="details">
+                <h5>Higher Secondary Certificate</h5>
+                <small class="fg-theme">Shaheed Bir Uttam Lt. Anwar Girl's College</small>
 
-    <section class="section about-me" data-section="section1">
-      <div class="container">
-        <div class="section-heading">
-          <h2>About Me</h2>
-          <div class="line-dec"></div>
-          <span>I am a student.I completed my graduation in 2019.Now I am a student of an IT course which organized by
-            ISDB-BISEW .</span>
+                <p>GPA :5.00</p>
+                <P>Business Studies</P>
+              </div>
+            </li>
+            <li>
+              <div class="title">2010</div>
+              <div class="details">
+                <h5>Secondary School Certificate</h5>
+                <small class="fg-theme">Mirpur Shaheed Smiti High School</small>
+                <p>GPA :4.44</p>
+                <P>Business Studies</P>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="left-image-post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="left-image">
-                <img src="assets/images/left-image.jpg" alt="" />
+        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+          <h2 class="fw-normal">Experience</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2021 - Current</div>
+              <div class="details">
+                <h5>Java course</h5>
+                <small class="fg-theme">Isdb-bisew</small>
+                <p>The IsDB-BISEW IT Scholarship Programme was launched in 2003 with the aim of enhancing the employment
+                  prospects of meritorious Muslim</p>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="right-text">
-                <h4>I Spend My Leisure Time</h4>
-                <p>
-                  When I have some free time I try to spend it with use for me.so, I like to read an interesting book or
-                  to wacth an intellectual show.But sometimes, whent I want to just have a rest or enjoy my liesure
-                  time, I prefer listening music, wathing a movie,go to travel.Besides it is pleasent to go for a walk
-                  with my friends and to chat with them
-                </p>
-                <div class="white-button">
-                  <a href="#">Read More</a>
-                </div>
+            </li>
+            <li>
+              <div class="title">2019</div>
+              <div class="details">
+                <h5>Job Experience</h5>
+                <small class="fg-theme">Travel agency</small>
+                <p>It's really a good experience for me.</p>
+                <p>It's help to me in my next experience.</p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="right-image-post">
-          <div class="row">
-            <div class="col-md-6">
-              <div class="left-text">
-                <h4>The Main Mantra Of LIFE</h4>
-                <p>
-                  Is learning how to take care of yourself; it is knowing that whatever tommorrow brings you will handle
-                  is with grace and humility ,and it means that you can live on less and be happy about it .so, Enjoy
-                  every moment of life with joy.
-                </p>
-                <div class="white-button">
-                  <a href="#">Read More</a>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="right-image">
-                <img src="assets/images/right-image.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+            </li>
+            <li>
+              <div class="title">2012</div>
+              <div class="details">
+                <h5>Computer(basic) course</h5>
+                <small class="fg-theme">Arvan institute</small>
+                <p>Word, Excel</p>
+                <p>Access, Power-Point</p>
 
-    <section class="section my-services" data-section="section2">
-      <div class="container">
-        <div class="section-heading">
-          <h2>What I’m good at?</h2>
-          <div class="line-dec"></div>
-          <span>Curabitur leo felis, rutrum vitae varius eu, malesuada a tortor.
-            Vestibulum congue leo et tellus aliquam, eu viverra nulla semper.
-            Nullam eu faucibus diam. Donec eget massa ante.</span>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="first-service-icon service-icon"></div>
-              <h4>Creative Ideas</h4>
-              <p>
-                Not every idea you get will be brilliant, but by increasing
-                the number of ideas you will naturally increase the number of
-                good ideas as well.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="second-service-icon service-icon"></div>
-              <h4>HTML5 &amp; CSS3</h4>
-              <p>
-                While it's impossible to teach you everything you need to know
-                about coding in a single resource.There are many different coding
-                languages
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="second-service-icon service-icon"></div>
-              <h4>JavaScript &amp; Oracle</h4>
-              <p>
-                Computer programming is the process of designing and building an
-                executable computer program to accomplish a specific computing result
-                or to perform a specific task.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="service-item">
-              <div class="third-service-icon service-icon"></div>
-              <h4>Easy Customize</h4>
-              <p>
-                Programming is a creative task: there is no right or wrong way to solve
-                a problem.The possibilities are constrained only by your imagination.
-                 
-              </p>
-            </div>
-          </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <section class="section my-work" data-section="section3">
-      <div class="container">
-        <div class="section-heading">
-          <h2>My Work</h2>
-          <div class="line-dec"></div>
-          <span>Sometimes I captures images electronically,
-                 normally using a digital camera, and editing photos on a
-                 computer.</span>
-        </div>
-        <div class="row">
-          <div class="isotope-wrapper">
-            <form class="isotope-toolbar">
-              <label><input type="radio" data-type="*" checked="" name="isotope-filter" />
-                <span>all</span></label>
-              <label><input type="radio" data-type="people" name="isotope-filter" />
-                <span>people</span></label>
-              <label><input type="radio" data-type="nature" name="isotope-filter" />
-                <span>nature</span></label>
-              <label><input type="radio" data-type="animals" name="isotope-filter" />
-                <span>Enjoy</span></label>
-            </form>
-            <div class="isotope-box">
-              <div class="isotope-item" data-type="nature">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-01.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-01.jpg" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search"></i></a>
-                    <h4>First Title</h4>
-                    <span>free to use our template</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="people">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-02.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-02.jpg" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Second Title</h4>
-                    <span>please tell your friends</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="animals">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-03.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-03.jpg" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Item Third</h4>
-                    <span>customize anything</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="people">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-04.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-04.jpg" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Item Fourth</h4>
-                    <span>Re-distribution not allowed</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="nature">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-05.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-05.jpg" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Fifth Awesome</h4>
-                    <span>Ut sollicitudin risus</span>
-                  </figcaption>
-                </figure>
-              </div>
-
-              <div class="isotope-item" data-type="animals">
-                <figure class="snip1321">
-                  <img src="assets/images/portfolio-06.jpg" alt="sq-sample26" />
-                  <figcaption>
-                    <a href="assets/images/portfolio-06.jpg" data-lightbox="image-1" data-title="Caption"><i
-                        class="fa fa-search"></i></a>
-                    <h4>Awesome Sixth</h4>
-                    <span>Donec eget massa ante</span>
-                  </figcaption>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section contact-me" data-section="section4">
-      <div class="container">
-        <div class="section-heading">
-          <h2>Contact Me</h2>
-          <div class="line-dec"></div>
-          <span>If you like to my page and wish to contact me please you can anytime.</span>
-        </div>
-        <div class="row">
-          <div class="right-content">
-            <div class="container">
-              <form id="contact" action="" method="post">
-                <div class="row">
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="name" type="text" class="form-control" id="name" placeholder="Your name..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-6">
-                    <fieldset>
-                      <input name="email" type="text" class="form-control" id="email" placeholder="Your email..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..."
-                        required="" />
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..."
-                        required=""></textarea>
-                    </fieldset>
-                  </div>
-                  <div class="col-md-12">
-                    <fieldset>
-                      <button type="submit" id="form-submit" class="button">
-                        Send Message
-                      </button>
-                    </fieldset>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
   </div>
 
-  <!-- Scripts -->
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <div class="vg-page page-service">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Service</div>
+      </div>
+      <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
+      <div class="row mt-5">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-paint-bucket"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Web Design</h4>
+              <p>Web design encompasses many different skills and disciplines in the production and maintenance of
+                websites. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-search"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">SEO</h4>
+              <p>Search engine optimization is the process of improving the quality and quantity of website traffic to a
+                website or a web page from search engines.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-vector"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">UML Design</h4>
+              <p> A diagram is a partial graphic representation of a system's model.UML is a combination of several
+                object-oriented notations</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-desktop"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Web Development</h4>
+              <p>Web development can range from developing a simple single static page of plain text to complex web
+                applications, electronic businesses, and social network services</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <script src="assets/js/isotope.min.js"></script>
-  <script src="assets/js/owl-carousel.js"></script>
-  <script src="assets/js/lightbox.js"></script>
-  <script src="assets/js/custom.js"></script>
-  <script>
-    //according to loftblog tut
-    $(".main-menu li:first").addClass("active");
+  <div class="vg-page page-funfact" style="background-image: url(assets/img/bg_banner.jpg);">
+    <div class="container">
+      <div class="row section-counter">
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="768">768</h1>
+          <span>Clients</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="230">230</h1>
+          <span>Project Compleate</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="97">97</h1>
+          <span>Project Ongoing</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="699">699</h1>
+          <span>Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    var showSection = function showSection(section, isAnimate) {
-      var direction = section.replace(/#/, ""),
-        reqSection = $(".section").filter(
-          '[data-section="' + direction + '"]'
-        ),
-        reqSectionPos = reqSection.offset().top - 0;
+  <!-- Portfolio page -->
+  <div class="vg-page page-portfolio" id="portfolio">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Portfolio</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
+      <div class="filterable-button py-3 wow fadeInUp" data-toggle="selected">
+        <button class="btn btn-theme-outline selected" data-filter="*">All</button>
+        <button class="btn btn-theme-outline" data-filter=".apps">Apps</button>
+        <button class="btn btn-theme-outline" data-filter=".template">Template</button>
+        <button class="btn btn-theme-outline" data-filter=".ios">IOS</button>
+        <button class="btn btn-theme-outline" data-filter=".ui-ux">UI/UX</button>
+        <button class="btn btn-theme-outline" data-filter=".graphic">Graphic</button>
+        <button class="btn btn-theme-outline" data-filter=".wireframes">Wireframes</button>
+      </div>
 
-      if (isAnimate) {
-        $("body, html").animate(
-          {
-            scrollTop: reqSectionPos
-          },
-          800
-        );
-      } else {
-        $("body, html").scrollTop(reqSectionPos);
-      }
-    };
+      <div class="gridder my-3">
+        <div class="grid-item apps wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-1.jpg" data-fancybox
+            data-caption="<h5 class='fg-theme'>Mobile Travel App</h5> <p>Travel, Discovery</p>">
+            <img src="assets/img/work/work-1.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Mobile Travel App</h5>
+              <p>Travel, Discovery</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item template wireframes wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-2.jpg" data-fancybox
+            data-caption="<h5 class='fg-theme'>Music App</h5> <p>Musics</p>">
+            <img src="assets/img/work/work-2.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Music App</h5>
+              <p>Musics</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item apps ios wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-3.jpg" data-fancybox
+            data-caption="<h5 class='fg-theme'>Gaming Dashboard</h5> <p>Games, Streaming</p>">
+            <img src="assets/img/work/work-3.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Gaming Dashboard</h5>
+              <p>Games, Streaming</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item graphic ui-ux wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-4.jpg" data-fancybox
+            data-caption="<h5 class='fg-theme'>Drugs Delivery App</h5> <p>Health, Drugs</p>">
+            <img src="assets/img/work/work-4.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Drugs Delivery App</h5>
+              <p>Health, Drugs</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item apps ios wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-5.jpg" data-fancybox
+            data-caption="<h5 class='fg-theme'>Musics Discover</h5> <p>Musics, Dashboard</p>">
+            <img src="assets/img/work/work-5.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Musics Discover</h5>
+              <p>Musics, Dashboard</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-item graphic ui-ux wireframes wow zoomIn">
+          <div class="img-place" data-src="assets/img/work/work-6.jpg" data-fancybox
+            data-caption="<h5 class='fg-theme'>Game Streaming</h5> <p>Games, Streaming</p>">
+            <img src="assets/img/work/work-6.jpg" alt="">
+            <div class="img-caption">
+              <h5 class="fg-theme">Game Streaming</h5>
+              <p>Games, Streaming</p>
+            </div>
+          </div>
+        </div>
+      </div> <!-- End gridder -->
+      <div class="text-center wow fadeInUp">
+        <a href="javascript:void(0)" class="btn btn-theme">Load More</a>
+      </div>
+    </div>
+  </div> <!-- End Portfolio page -->
 
-    var checkSection = function checkSection() {
-      $(".section").each(function () {
-        var $this = $(this),
-          topEdge = $this.offset().top - 80,
-          bottomEdge = topEdge + $this.height(),
-          wScroll = $(window).scrollTop();
-        if (topEdge < wScroll && bottomEdge > wScroll) {
-          var currentId = $this.data("section"),
-            reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-          reqLink
-            .closest("li")
-            .addClass("active")
-            .siblings()
-            .removeClass("active");
-        }
-      });
-    };
+  <!-- Testimonial -->
+  <div class="vg-page page-testimonial">
+    <div class="container">
+      <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
+      <div class="row justify-content-center mt-5 wow fadeInUp">
+        <div class="col-md-9">
+          <div class="owl-carousel testi-carousel">
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">There are many variations of passages of Lorem Ipsum available, but the
+                      majority have suffered</div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="assets/img/testimonials/testimonials_1.jpg" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Satria Nugraha</h5>
+                        <span class="text-muted">CEO Nutshell</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe natus
+                      expedita ab facilis ut, animi explicabo amet. Voluptatibus possimus iste enim, doloremque, fugiat
+                      accusamus nisi optio fugit ratione expedita harum?</div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="assets/img/testimonials/testimonials_2.jpg" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Selena Arrini</h5>
+                        <span class="text-muted">CEO BigTree</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End testimonial -->
 
-    $(".main-menu").on("click", "a", function (e) {
-      e.preventDefault();
-      showSection($(this).attr("href"), true);
-    });
+  <!-- Client -->
+  <div class="vg-page page-client">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_1.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_2.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_3.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_4.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_5.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_6.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_7.svg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 item">
+          <div class="img-place wow fadeInUp">
+            <img src="assets/img/logo/company_8.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End client -->
 
-    $(window).scroll(function () {
-      checkSection();
-    });
-  </script>
+  <!-- Blog -->
+  <div class="vg-page page-blog" id="blog">
+    <div class="container">
+      <div class="text-center">
+        <div class="badge badge-subhead wow fadeInUp">Blog</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">Latest Post</h1>
+      <div class="row post-grid">
+        <div class="col-md-6 col-lg-4 wow fadeInUp">
+          <div class="card">
+            <div class="img-place">
+              <img src="assets/img/work/work-9.jpg" alt="">
+            </div>
+            <div class="caption">
+              <a href="javascript:void(0)" class="post-category">Technology</a>
+              <a href="#" class="post-title">Invision design forward fund</a>
+              <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp">
+          <div class="card">
+            <div class="img-place">
+              <img src="assets/img/work/work-6.jpg" alt="">
+            </div>
+            <div class="caption">
+              <a href="javascript:void(0)" class="post-category">Business</a>
+              <a href="#" class="post-title">Announcing a plan for small teams</a>
+              <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 wow fadeInUp">
+          <div class="card">
+            <div class="img-place">
+              <img src="assets/img/work/work-1.jpg" alt="">
+            </div>
+            <div class="caption">
+              <a href="javascript:void(0)" class="post-category">Design</a>
+              <a href="#" class="post-title">5 basic tips for illustrating</a>
+              <span class="post-date"><span class="sr-only">Published on</span> May 22, 2018</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 text-center py-3 wow fadeInUp">
+          <a href="blog-fullbar.html" class="btn btn-theme">See All Post</a>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End blog -->
+
+  <!-- Contact -->
+  <div class="vg-page page-contact" id="contact">
+    <div class="container-fluid">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Contact</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">Get in touch</h1>
+      <div class="row py-5">
+        <div class="col-lg-7 px-0 pr-lg-3 wow zoomIn">
+          <div class="vg-maps">
+            <div id="google-maps" style="width: 100%; height: 100%;"></div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form class="vg-contact-form">
+            <div class="form-row">
+              <div class="col-12 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Name" placeholder="Your Name">
+              </div>
+              <div class="col-6 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Email" placeholder="Email Address">
+              </div>
+              <div class="col-6 mt-3 wow fadeInUp">
+                <input class="form-control" type="text" name="Subject" placeholder="Subject">
+              </div>
+              <div class="col-12 mt-3 wow fadeInUp">
+                <textarea class="form-control" name="Message" rows="6" placeholder="Enter message here.."></textarea>
+              </div>
+              <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End Contact -->
+
+  <!-- Footer -->
+  <div class="vg-footer">
+    <h1 class="text-center">Virtual Folio</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="footer-info">
+            <p>Where to find me</p>
+            <hr class="divider">
+            <p class="fs-large fg-white">1600 Amphitheatre Parkway Mountain View, California 94043 US</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Follow me</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Contact me</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li>info@virtual.com</li>
+              <li>+8890234</li>
+              <li>+813023</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 mb-3">
+          <h3 class="fw-normal text-center">Subscribe</h3>
+        </div>
+        <div class="col-lg-6">
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Email address">
+              <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
+            </div>
+          </form>
+        </div>
+        <div class="col-12">
+          <p class="text-center mb-0 mt-4">Copyright &copy;2020. All right reserved | This template is made with <span
+              class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a></p>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End footer -->
+
+
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+
+  <script src="assets/vendor/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+
+  <script src="assets/vendor/isotope/isotope.pkgd.min.js"></script>
+
+  <script src="assets/vendor/nice-select/js/jquery.nice-select.min.js"></script>
+
+  <script src="assets/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+  <script src="assets/vendor/wow/wow.min.js"></script>
+
+  <script src="assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
+
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+
+  <script src="assets/js/google-maps.js"></script>
+
+  <script src="assets/js/topbar-virtual.js"></script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script>
+
 </body>
 
 </html>
